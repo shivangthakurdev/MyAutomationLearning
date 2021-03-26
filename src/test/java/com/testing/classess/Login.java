@@ -10,6 +10,11 @@ import java.util.concurrent.TimeUnit;
 
 public class Login extends ExtendedPageObject {
 
+
+    public void closetheBrowser(){
+        getDriver().close();
+    }
+
     public void user_open_google_homepage() throws InterruptedException {
         waitForPageLoaded();
         getDriver().get("https://www.google.com/");

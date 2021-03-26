@@ -3,11 +3,20 @@ package com.testing.steps.serenity;
 
 import com.testing.classess.Facebook;
 import com.testing.classess.Login;
+import cucumber.api.java.After;
 import net.thucydides.core.annotations.Step;
 
 public class EndUserSteps {
     Login login;
     Facebook facebook;
+    @After
+    public void closebrowser(){
+        login.closetheBrowser();
+    }
+    @After
+    public void hello(){
+        System.out.println("Hello test is paased");
+    }
 
     @Step
     public void user_open_google_homepage() throws InterruptedException {

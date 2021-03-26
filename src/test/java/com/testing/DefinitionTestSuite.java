@@ -5,7 +5,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "test/cucumber/",glue = "com.testing/steps")
+@CucumberOptions(features = "test/cucumber/")
 public class DefinitionTestSuite {
 
 
