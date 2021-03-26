@@ -1,4 +1,4 @@
-@Login
+@Login @Facebook @SmokeTest
 
   Feature: Search youtube
 
